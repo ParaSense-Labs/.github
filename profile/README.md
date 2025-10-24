@@ -2,15 +2,15 @@
 
 # 🔬 ParaSense Labs
 
-### *Advancing Paranormal Research Through Open Science*
+### *Building Tomorrow's Paranormal Detection Tools*
 
 [![Website](https://img.shields.io/badge/Website-parasenselabs.se-blue?style=flat-square)](https://parasenselabs.se)
-[![License](https://img.shields.io/badge/License-Various-green?style=flat-square)](#)
+[![Location](https://img.shields.io/badge/Location-Stockholm%2C%20Sweden-green?style=flat-square)](#)
 [![Status](https://img.shields.io/badge/Status-Active%20Development-orange?style=flat-square)](#)
 
-**Building the future of evidence-based paranormal investigation**
+**Open-source paranormal research devices built with Arduino, ESP32, and 3D-printing**
 
-[About](#about) • [Projects](#projects) • [Technology](#technology) • [Get Involved](#get-involved) • [Contact](#contact)
+[About](#about) • [Our Devices](#our-devices) • [Technology](#technology) • [Get Involved](#get-involved) • [Contact](#contact)
 
 </div>
 
@@ -18,198 +18,88 @@
 
 ## 🎯 About
 
-ParaSense Labs is an open-source initiative dedicated to bringing **scientific rigor** to paranormal research. We design, build, and share tools that enable anyone to conduct evidence-based investigations of unexplained phenomena.
+ParaSense Labs designs and builds **open-source detection devices** for paranormal investigation. Every device is documented, tested, and shared freely so anyone can build their own equipment.
 
-### Our Mission
+We believe in:
+- 🔓 **Open Hardware** - All designs, code, and schematics freely available
+- 🔬 **Scientific Approach** - Measuring, not guessing
+- 🛠️ **DIY Accessible** - Built with common components and 3D-printing
+- 📊 **Transparent Results** - Sharing what works (and what doesn't)
 
-To democratize paranormal research by providing:
-- 🔓 **Open hardware designs** - Accessible to makers and researchers worldwide
-- 📊 **Transparent methodology** - Reproducible experiments and clear documentation
-- 🧪 **Scientific approach** - Statistical validation, baseline correction, and controlled testing
-- 🌍 **Community-driven development** - Collaborative improvement through peer review
-
-### Core Values
-```
-🔬 Scientific Integrity  →  Evidence over belief
-🤝 Open Collaboration   →  Shared knowledge benefits everyone
-🎓 Education           →  Teaching scientific methodology
-💡 Innovation          →  Pushing technological boundaries
-```
+> *"If you can't measure it, you can't investigate it."*
 
 ---
 
-## 🚀 Projects
+## 🔧 Our Devices
 
-### Active Development
+### ✅ In Testing (Built & Working)
 
-| Project | Description | Status |
-|---------|-------------|--------|
-| **[PSL-Sensor-Core](https://github.com/ParaSense-Labs/PSL-Sensor-Core)** | ESP32-based sensor firmware for multi-parameter detection | 🟡 Alpha |
-| **[PSL-Hardware](https://github.com/ParaSense-Labs/PSL-Hardware)** | Open hardware designs, schematics, and PCB layouts | 🟡 Alpha |
-| **[PSL-Data-Analysis](https://github.com/ParaSense-Labs/PSL-Data-Analysis)** | Statistical analysis tools and visualization suite | 🔴 Planning |
-| **[PSL-Docs](https://github.com/ParaSense-Labs/PSL-Docs)** | Research protocols, methodology, and guides | 🟢 Active |
+#### 🎵 Music Box
+**Proximity-activated audio player**
 
-### Coming Soon
+A paranormal "trigger device" that plays music when something approaches. Uses ultrasonic sensors to detect movement in front of the device.
 
-- 📱 Mobile companion app for real-time monitoring
-- 🌐 Web dashboard for data visualization
-- 📡 Multi-sensor network synchronization
-- 🗺️ Location-based data mapping
+- **Sensors:** HC-SR04 ultrasonic distance sensor
+- **Controller:** Arduino/ESP32
+- **Purpose:** Trigger device - attracts and detects interaction
+- **Status:** ✅ Built and field-tested
+- **Repo:** *Coming soon*
+
+---
+
+#### ⚡ Proximity Sensor
+**Static electricity detection unit**
+
+Detects changes in static electricity using a Darlington transistor circuit. Highly sensitive to nearby presence without physical contact.
+
+- **Circuit:** Darlington pair amplifier
+- **Detection:** Static electric field changes
+- **Purpose:** Non-contact proximity detection
+- **Status:** ✅ Built and testing
+- **Repo:** *Coming soon*
+
+---
+
+### 🔄 In Development
+
+#### 🌑 Shadow Sensor
+**Light variance detection system**
+
+Detects sudden changes in ambient light levels that could indicate a shadow passing by. Filters out gradual changes (clouds, sunset) to focus on rapid anomalies.
+
+- **Sensors:** Photoresistors/photodiodes
+- **Detection:** Rapid light level changes
+- **Purpose:** Shadow movement detection
+- **Status:** 🟡 Planning stage
+- **Repo:** *Coming soon*
+
+---
+
+#### 📡 Excluder
+**Environmental baseline mapper**
+
+Scans and logs all "normal" activity in an investigation area before you start. Maps WiFi networks, Bluetooth devices, magnetic fields, and EMF sources so you know what's naturally there.
+
+- **Scans:** WiFi, Bluetooth, EMF, magnetic fields
+- **Purpose:** Establish environmental baseline
+- **Output:** Detailed map of normal activity
+- **Status:** 🟡 Active development
+- **Use case:** Run this FIRST to know what to ignore
+- **Repo:** *Coming soon*
+
+> 💡 **Why the Excluder matters:** If there's a WiFi router or Bluetooth speaker in the room, you need to know *before* your EMF detector starts going off!
+
+---
+
+### 🔮 Future Concepts
+
+- **Multi-sensor node** - Combined unit with multiple detection methods
+- **Data logger** - Long-term recording with SD card storage
+- **Synchronized network** - Multiple units working together
+- **Temperature variance detector** - Mapping cold spots scientifically
 
 ---
 
 ## 🛠️ Technology Stack
 
-Our tools are built on proven, accessible technology:
-
-### Hardware
-- **Microcontroller:** ESP32 (WiFi + Bluetooth LE)
-- **Sensors:** Magnetometers, EMF detectors, environmental sensors
-- **Power:** Battery + solar capable designs
-- **Connectivity:** BLE mesh networking, WiFi, GPS
-
-### Software
-- **Firmware:** C++ / Arduino framework / ESP-IDF
-- **Data Analysis:** Python (NumPy, SciPy, Pandas)
-- **Visualization:** Matplotlib, Plotly, Grafana
-- **Version Control:** Git, GitHub Actions for CI/CD
-
-### Methodology
-```
-1. Baseline Measurement → Establish normal conditions
-2. Controlled Testing   → Eliminate environmental factors
-3. Data Collection      → Multi-parameter logging
-4. Statistical Analysis → Identify anomalies scientifically
-5. Peer Review         → Community validation
-```
-
----
-
-## 🧪 Scientific Approach
-
-### How We Maintain Rigor
-
-✅ **Control for false positives**
-- Background EMF mapping
-- Temperature/humidity correlation
-- Mechanical vibration detection
-- Power supply noise filtering
-
-✅ **Reproducible results**
-- Timestamped raw data
-- GPS location tagging
-- Environmental condition logging
-- Open-source analysis code
-
-✅ **Transparent limitations**
-- Known sensor sensitivities
-- Range and accuracy specifications
-- Sources of interference
-- Interpretation boundaries
-
-> *"Extraordinary claims require extraordinary evidence."* - Carl Sagan
-> 
-> We're building the tools to gather it.
-
----
-
-## 🤝 Get Involved
-
-We welcome contributors of all skill levels and backgrounds!
-
-### 🎯 How You Can Help
-
-| Interest | Contribution |
-|----------|-------------|
-| 💻 **Developer** | Improve firmware, create analysis tools, build web interfaces |
-| ⚡ **Hardware Engineer** | Design circuits, optimize sensors, create enclosures |
-| 📝 **Technical Writer** | Documentation, tutorials, methodology guides |
-| 🔬 **Researcher** | Field testing, protocol development, data analysis |
-| 🎨 **Designer** | UI/UX, 3D models, visual documentation |
-| 🌍 **Translator** | Multilingual documentation |
-
-### 🌟 Getting Started
-
-1. 📖 Read our [Contributing Guidelines](https://github.com/ParaSense-Labs/.github/blob/main/CONTRIBUTING.md)
-2. 🔍 Browse [open issues](https://github.com/orgs/ParaSense-Labs/projects) across projects
-3. 💬 Join the [Discussions](https://github.com/orgs/ParaSense-Labs/discussions)
-4. 🍴 Fork a repository and start building!
-
-**First time contributor?** Look for issues tagged with `good-first-issue` or `help-wanted`
-
----
-
-## 📊 Current Focus
-```mermaid
-graph LR
-    A[Sensor Hardware] --> B[Firmware Development]
-    B --> C[Data Collection]
-    C --> D[Analysis Tools]
-    D --> E[Field Testing]
-    E --> F[Community Validation]
-    F --> A
-```
-
-**Q4 2024 - Q1 2025 Goals:**
-- ✅ Complete ESP32 sensor node prototype
-- 🔄 Develop baseline calibration procedures
-- 🔄 Create web-based data viewer
-- ⏳ Conduct first controlled field tests
-- ⏳ Publish methodology documentation
-
----
-
-## 📚 Resources
-
-- 📖 [Documentation](https://github.com/ParaSense-Labs/PSL-Docs)
-- 🎓 [Getting Started Guide](https://github.com/ParaSense-Labs/PSL-Docs/wiki/Getting-Started)
-- 🔧 [Hardware Assembly](https://github.com/ParaSense-Labs/PSL-Hardware/wiki)
-- 📊 [Data Analysis Examples](https://github.com/ParaSense-Labs/PSL-Data-Analysis/tree/main/examples)
-- 💬 [Community Discussions](https://github.com/orgs/ParaSense-Labs/discussions)
-
----
-
-## 📬 Contact
-
-- 🌐 **Website:** [parasenselabs.se](https://parasenselabs.se)
-- 📧 **Email:** info@parasenselabs.se
-- 💬 **Discussions:** [GitHub Discussions](https://github.com/orgs/ParaSense-Labs/discussions)
-- 📍 **Location:** Gävle, Sweden
-
----
-
-## 📜 Licensing
-
-Our projects use various open-source licenses to ensure maximum accessibility:
-
-- **Hardware:** CERN Open Hardware License (CERN-OHL-S v2)
-- **Software:** MIT License (permissive) or GPL v3 (copyleft)
-- **Documentation:** Creative Commons CC-BY-SA 4.0
-
-See individual repositories for specific license information.
-
----
-
-## 🙏 Acknowledgments
-
-ParaSense Labs stands on the shoulders of giants:
-
-- The global **open-source community** for tools and inspiration
-- **ESP32/Arduino ecosystem** for accessible embedded development
-- **Scientific methodology** pioneers who teach us to question everything
-- **Every contributor** who helps push this project forward
-
----
-
-<div align="center">
-
-### 🔮 *"The most beautiful thing we can experience is the mysterious. It is the source of all true art and science."*
-*— Albert Einstein*
-
----
-
-**⭐ Star our repositories | 🍴 Fork and contribute | 💬 Join the discussion**
-
-*Building tomorrow's paranormal research tools, today.*
-
-</div>
+### Hardware Platform
